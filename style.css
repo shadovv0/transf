@@ -284,6 +284,10 @@ a {
 
 
 @media (max-width: 700px) {
+    .container {
+        padding: 10px;
+    }
+
    .nav {
     flex-wrap: wrap;
    }
@@ -313,5 +317,23 @@ a {
 
     .header__right {
         margin-left: 25px;
+    }
+
+    .feature {
+        padding: 10px;
+    }
+
+    .feature__container {
+        padding-left: 8px;
+    }
+ }
+
+ @media (max-width: 400px) {
+    .features {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        padding: 20px 0;
+        margin: 0 15px;
     }
  }
