@@ -3,6 +3,53 @@ body {
     margin: 0;
     padding: 0;
     background-color: #F2F8FF;
+    cursor: default;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    max-width: 840px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    max-height: 190px;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.header-logo img {
+    max-width: 240px;
+    max-height: 190px;
+}
+
+.header-title {
+    max-width: 300px;
+    font-size: 26px;
+    color: #2B3B4D;
+}
+
+.header__right {
+    position: relative;
+    display: inline-block;
+}
+
+.header__right img {
+    width: 250px; 
+    height: auto;
+}
+
+.header__right p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+    font-weight: 500;
 }
 
 .container {
@@ -10,35 +57,6 @@ body {
     margin: 0 auto;
     background-color: #FFFFFF;
     padding: 20px;
-    border-radius: 10px;
-}
-
-.header {
-    display: flex;
-    padding: 20px;
-}
-
-.header img {
-    height: 180px;
-    width: 235px;
-    flex: 1 1 auto;
-}
-
-.header-title {
-    text-align: center;
-    font-weight: 900;
-    font-size: 26px;
-    color: #2B3B4D;
-    flex: 1 1 100%;
-    margin-top: 10px;
-}
-
-.header__right p {
-    z-index: 2;
-}
-
-.header__right img {
-    z-index: 1;
 }
 
 .nav {
@@ -47,6 +65,7 @@ body {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: flex-start;
+    margin: 0 15px;
 }
 
 .action-item {
@@ -60,20 +79,12 @@ body {
     height: 40px;
 }
 
-.action-item p {
-
-}
-
-.action-item span {
-
-}
-
-
 .features {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     padding: 20px 0;
+    margin: 0 15px;
 }
 
 .feature {
@@ -115,7 +126,7 @@ body {
 
 .contact-section {
     text-align: center;
-    padding: 40px;
+    padding: 15px;
     background: linear-gradient(291.02deg, #005CBB 20.65%, #0089D0 83.37%);
     border-radius: 6px;
     color: #FFFFFF;
@@ -152,6 +163,7 @@ body {
     background: #F3F8FF;
     padding: 10px;
     border-radius: 6px;
+    margin: 0 15px;
 }
 
 .utp-block  h3{
@@ -186,6 +198,9 @@ body {
     padding: 20px;
     font-size: 10px;
     color: #6D7481;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
 }
 
 .footer__container {
@@ -193,7 +208,8 @@ body {
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    margin: 25px 0;
 }
 
 .footer__link {
